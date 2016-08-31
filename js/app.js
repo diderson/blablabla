@@ -24,7 +24,7 @@ var app = angular.module('WebApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "partials/accounts.html", controller: "AccountCtrl"})
     // Pages
     .when("/accounts", {templateUrl: "partials/accounts.html", controller: "AccountCtrl"})
     .when("/account/view/:id", {templateUrl: "partials/accountHistory.html", controller: "AccountHistoryCtrl"})
