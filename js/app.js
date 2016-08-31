@@ -31,5 +31,5 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/withdraw", {templateUrl: "partials/withdraw.html", controller: "AccountWithdrawCtrl"})
     .when("/deposit", {templateUrl: "partials/deposit.html", controller: "AccountDepositCtrl"})
     // else Home
-    .otherwise("/",{templateUrl: "partials/home.html", controller: "PageCtrl"});
+    .otherwise("/",{templateUrl: "partials/accounts.html", controller: "AccountCtrl"});
 }]);
