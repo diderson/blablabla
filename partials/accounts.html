@@ -1,0 +1,34 @@
+<!-- Page Content -->
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                <small>Accounts</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="active">Accounts</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" ng-repeat="account in accounts">
+            <h2 class="page-header">{{account.type}}: {{account.account}}</h2>
+
+            <p>Balance: {{account.balance}}</p>
+            <p>Available: {{account.Available}}</p>
+            <a class="btn btn-primary" href="#/account/view/{{account.id}}">View</a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+   
+
+</div>
+<!-- /.container -->
